@@ -8,21 +8,15 @@
 
 ### Intro
 
+Forked from [@Workshape/icon-font-generator](https://github.com/Workshape/icon-font-generator)
 This cli utility is ment to make webfont icon sets creation from the command line really simple - It wraps and pre-configures [webfonts-generator](https://www.npmjs.com/package/webfonts-generator), but allows for some degree of customisation.
 
 It also does a couple extra things such as creating a .json file containing the icons to unicode characters map, which may be later used in styles, templates, etc..
 
-#### Upgrading from v1.x.x
-
-**!!** If you're upgrading from `v1.x.x` to `v2.x.x` - here's the changelog and thoubleshooting: https://github.com/Workshape/icon-font-generator/releases/tag/v2.1.2
-
-**!!** `icon-font-generator` `v2.x.x >=` requires Node.js `>= v8.1.0` - is you wish to run on a lower version, use [v1.1.2](https://github.com/Workshape/icon-font-generator/releases/tag/v1.1.2)
-
-
 ### Install
 
 ```
-npm install -g icon-font-generator
+npm install AdrianoCahete/webfont-generator-cli
 ```
 
 ### Use
@@ -30,14 +24,14 @@ npm install -g icon-font-generator
 ##### Quick usage
 
 ```
-icon-font-generator my-icons/*.svg -o icon-dist
+webfont-generator-cli my-icons/*.svg -o icon-dist
 ```
 
 ##### Cli params
 
 ```
-Usage   : icon-font-generator [ svg-icons-glob ] -o [ output-dir ] [ options ]
-Example : icon-font-generator src/*.svg -o dist
+Usage   : webfont-generator-cli [ svg-icons-glob ] -o [ output-dir ] [ options ]
+Example : webfont-generator-cli src/*.svg -o dist
 
 Options:
   -o, --out        Output icon font set files to <out> directory
@@ -68,4 +62,4 @@ Options:
 
 ### License
 
-Copyright (c) 2014 Workshape.io Ltd. - Released under the [MIT license](https://github.com/Workshape/icon-font-generator/blob/master/LICENSE)
+Original Copyright (c) 2014 Workshape.io Ltd. - Released under the [MIT license](https://github.com/Workshape/icon-font-generator/blob/master/LICENSE)
