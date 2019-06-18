@@ -8,7 +8,7 @@
     "url": "https://github.com/AdrianoCahete/webfont-generator-cli.git"
   },
   "bin": {
-    "icon-font-generator": "bin/icon-font-generator"
+    "webfont-generator-cli": "bin/icon-font-generator"
   },
   "scripts": {},
   "author": "Tancredi Trugenberger, Adriano Cahete",
