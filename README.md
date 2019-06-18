@@ -1,6 +1,4 @@
-![Icon](https://camo.githubusercontent.com/2b418776b6cc9cb7d90c68905d3381674f13d7ec/687474703a2f2f692e6375626575706c6f61642e636f6d2f4541367957612e706e67)
-
-## Icon font generator
+## Webfont Generator CLI
 
 ![Screenshot](https://camo.githubusercontent.com/7aaef96033be671fa29297c0efd6c50f97a502f6/68747470733a2f2f692e6375626575706c6f61642e636f6d2f65597736766a2e706e67)
 
@@ -8,7 +6,8 @@
 
 ### Intro
 
-Forked from [@Workshape/icon-font-generator](https://github.com/Workshape/icon-font-generator)
+> Forked from [@Workshape/icon-font-generator](https://github.com/Workshape/icon-font-generator)  
+
 This cli utility is ment to make webfont icon sets creation from the command line really simple - It wraps and pre-configures [webfonts-generator](https://www.npmjs.com/package/webfonts-generator), but allows for some degree of customisation.
 
 It also does a couple extra things such as creating a .json file containing the icons to unicode characters map, which may be later used in styles, templates, etc..
@@ -57,9 +56,13 @@ Options:
   --mono           Make font monospace (Default: false)
   --height         Fixed font height value
   --center         Center font horizontally
+  --timestamp      Override font creation time (Unix time stamp)
+  --codepoint      The starting character code to count up from (Optional)
+  --codepoints     Path to explicit character code mapping JSON file (Optional)
 ```
 
 
 ### License
 
+Copyright (c) 2019 Adriano Cahete - Released under the [MIT license](https://github.com/AdrianoCahete/webfont-generator-cli/blob/master/LICENSE)  
 Original Copyright (c) 2014 Workshape.io Ltd. - Released under the [MIT license](https://github.com/Workshape/icon-font-generator/blob/master/LICENSE)
