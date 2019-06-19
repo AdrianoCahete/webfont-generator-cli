@@ -1,10 +1,8 @@
-## Webfont Generator CLI
-
-![Screenshot](https://camo.githubusercontent.com/7aaef96033be671fa29297c0efd6c50f97a502f6/68747470733a2f2f692e6375626575706c6f61642e636f6d2f65597736766a2e706e67)
+# Webfont Generator CLI
 
 > Easy-to-use, pre-configured cli tool to generate webfont icon kits from a bunch of .svg files
 
-### Intro
+## Intro
 
 > Forked from [@Workshape/icon-font-generator](https://github.com/Workshape/icon-font-generator)  
 
@@ -12,24 +10,26 @@ This cli utility is ment to make webfont icon sets creation from the command lin
 
 It also does a couple extra things such as creating a .json file containing the icons to unicode characters map, which may be later used in styles, templates, etc..
 
-### Install
+> It's recommended to run a [SVGO](https://github.com/svg/svgo) task before running this generator.
 
+## Install
 ```
-npm install AdrianoCahete/webfont-generator-cli
+npm install AdrianoCahete/webfont-generator-cli#v2.2.0
 ```
 
-### Use
+## Use
 
-##### Quick usage
+### Quick usage
 
 ```
 webfont-generator-cli my-icons/*.svg -o icon-dist
 ```
 
-##### Cli params
+### Cli params
 
 ```
 Usage   : webfont-generator-cli [ svg-icons-glob ] -o [ output-dir ] [ options ]
+
 Example : webfont-generator-cli src/*.svg -o dist
 
 Options:
@@ -61,8 +61,20 @@ Options:
   --codepoints     Path to explicit character code mapping JSON file (Optional)
 ```
 
+### Options
 
-### License
+#### --codepoints
+Codepoint needs to receive a `json` file with the follow template:
+```
+{
+  "icon-name": "0xf100",
+  "icon-name2": "0xf101",
+}
+```
+
+Where the `[icon-name]` matchs an svg's file name.
+
+## License
 
 Copyright (c) 2019 Adriano Cahete - Released under the [MIT license](https://github.com/AdrianoCahete/webfont-generator-cli/blob/master/LICENSE)  
 Original Copyright (c) 2014 Workshape.io Ltd. - Released under the [MIT license](https://github.com/Workshape/icon-font-generator/blob/master/LICENSE)
