@@ -74,6 +74,12 @@ Codepoint needs to receive a `json` file with the follow template:
 
 Where the `[icon-name]` matchs an svg's file name.
 
+
+## Know problems
+  - If the font is super simplified, try pass `--height 1000` as parameter when generating the font.
+
+  It occurs because the `round` parameter tends to simplify the SVG's path and may simplify too much.
+
 ## License
 
 Copyright (c) 2019 Adriano Cahete - Released under the [MIT license](https://github.com/AdrianoCahete/webfont-generator-cli/blob/master/LICENSE)  
