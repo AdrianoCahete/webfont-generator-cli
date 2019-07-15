@@ -1,6 +1,6 @@
 # Webfont Generator CLI
 
-> Easy-to-use, pre-configured cli tool to generate webfont icon kits from a bunch of .svg files
+Easy-to-use, pre-configured cli tool to generate webfont icon kits from a bunch of .svg files
 
 ## Intro
 
@@ -14,7 +14,7 @@ It also does a couple extra things such as creating a .json file containing the 
 
 ## Install
 ```
-npm install AdrianoCahete/webfont-generator-cli#v2.2.0
+npm install AdrianoCahete/webfont-generator-cli#v2.2.3
 ```
 
 ## Use
