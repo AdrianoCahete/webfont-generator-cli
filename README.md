@@ -1,6 +1,6 @@
 # Webfont Generator CLI
 
-> Easy-to-use, pre-configured cli tool to generate webfont icon kits from a bunch of .svg files
+Easy-to-use, pre-configured cli tool to generate webfont icon kits from a bunch of .svg files
 
 ## Intro
 
@@ -14,7 +14,7 @@ It also does a couple extra things such as creating a .json file containing the 
 
 ## Install
 ```
-npm install AdrianoCahete/webfont-generator-cli#v2.2.0
+npm install AdrianoCahete/webfont-generator-cli#v2.2.3
 ```
 
 ## Use
@@ -73,6 +73,11 @@ Codepoint needs to receive a `json` file with the follow template:
 ```
 
 Where the `[icon-name]` matchs an svg's file name.
+
+## Know problems
+  - If the font is super simplified, try pass `--height 1000` as parameter when generating the font.
+
+  It occurs because the `round` parameter tends to simplify the SVG's path and may simplify too much.
 
 ## License
 
